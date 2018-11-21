@@ -146,7 +146,7 @@ $(document).ready
   function()
   { 
     BASE_URL = window.localStorage.getItem("base_url");
-
+    if (BASE_URL=="") {var BASE_URL = "https://staging.threal3d.com/api/v3";}
     var getPara, ParaVal;
     var aryPara = [];
     var strUrl = location.search;
